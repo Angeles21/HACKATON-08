@@ -90,71 +90,73 @@
                     </div>
 					<hr class="dash" />
 					<!-- TERCERA PREGUNTA -->
-					<h4>8. Una empresa importadora desea determinar cuántos dólares puede adquirir con 
-                        equis candidad de dinero peruano.</h5>
+					<h4>13. Realice un algoritmo para leer las calificaciones de N alumnos y determine
+                        el número de aprobados y reprobados, así como las notas y comprarlas con un promedio 
+                        mínimo para que indique si aprueban o no.
+                    </h5>
 					<p>
-						Para este ejercicio, es necesario saber cuánto vale un dólar americano en relación a un sol peruano.
-                        En caso se desee aplicar una variable RANDOM, debe de establacerse un límite (por ejemplo, de 0 a 100),
-                        para que pueda ser computado y comparado, ya que de manera natural las variables RANDOM solo llegan a valores 
-                        entre 0 y 1.
+						En este ejercicio, es necesario crear una variable para aprobados, desaprobados,
+                        y n alumnos.
                     </p>
 						<br />
-						<li>ValorDolar:3,70</li>
-						<li>SolX: 50 </li>
+                        "Ingrese por favor cantidad de notas:" (n)
+                        "Ingrese por favor la nota:"(nota)
+						<li>aprobados: <-0</li>
+						<li>desaprobados: <-0</li>
+                        <li>nota: nota</li>
+                        <li> i como variable bucle para contabilizar el total </li>
+                        (* i <-1 hasta n, que en este caso contiene el número de notas totales)
 						<br />
                         <div class ="box">
-                            Para obtener la respuesta: SolX / ValorDolar = CantidadDolar
+                            Para obtener la respuesta: if nota >= 12,5 then aprobado <- aprobado+1, else 
+                            desaprobado <-desaprobado+1
                             <br />
-                            50 /3,70 = 13, 51
-                            <br />
-                            console.log( `Con (SolX) pueden adquirir hasta ${CantidadDolar}`) 
+                            console.log( `De (n) alumnos hay ${aprobados} y ${desaprobados}`) 
                         </div>
                     <hr class="dash" />
                     <!-- CUARTA PREGUNTA -->
-					<h4>9. Una empresa que contrata personal requiere determinar la edad de las personas 
-                        que solicitan el trabajo, pero cuando se les realiza la entrevista solo se le pregunta el
-                        año en que nacieron. (*)
+					<h4>14. Una compañía fabrica focos de colores (verdes, blancos y rojos), se desea 
+                        contabilizar de un lote de N focos el número de focos de cada color en existencia.
                     </h5>
                         <p>
-                            Para poder hallar la solución, debe de restarse el año actual (2021) con respecto al 
-                            AÑO DE NACIMIENTO del candidato para poder obtener su edad.   
+                            Para poder hallar la solución, debemos convertir las tres opciones de colores 
+                            a un número que pueda ser comparado con un básico.  
                         </p>
+
+                        "Ingrese por favor la cantidad de focos:" (n)
+                        "Ingrese por favor un (color): (Verde=1 Rojo=2 Blanco=3)"
+						<li>verde: <-0</li>
+						<li>rojos: <-0</li>
+                        <li>blanco: <-0 </li>
+                        (* Utilizaremos la variable "while" para establecer un ciclo en donde n es menor a cero 
+                        como default: while n > 0)
+                        (* El +1 es para llevar la cuenta de cuantos de estos focos de color hay en existencia)
+						<br />
+                        <div class ="box">
+                            Para obtener la respuesta: if color >= 1 y color <= 3 y color then color ==1  verde (verde +1);
+                            else, if color ==2  then rojo == (rojo+1), else color ==3 then blanco == (blanco+1)
                             <br />
-                            <li>AñoPresente: 2021 </li>
-                            <li>AñoDeNacimiento: 1994</li>
-                            <br />
-                            <div class ="box">
-                                Para obtener la respuesta: (AñoPresente - AñoDeNacimiento) = EdadCandidato
-                                <br />
-                                (2021 -1994) = 27 años
-                                <br />
-                                console.log( `La edad del candidato es ${EdadCandidato}`) 
-                            </div>
+                            console.log( `De (n) focos hay ${verde+1}, ${rojo+1} y ${blancos+1}`) 
                     <hr class="dash" />
                       <!-- QUINTA PREGUNTA -->
-					<h4>10. Se tiene el nombre y la edad de tres personas, se desea saber el nombre y la 
-                        edad de la persona de menor edad:</h5>
+					<h4>15. Realice un algoritmo para determinar si una persona puede votar en base a 
+                        su edad en las próximas elecciones. </h5>
                         <p>
-                            La forma más práctica de solucionar este problema, es aplicando comparativos. 
-                            Almaceando los nombres y las edades en un valor, puede hacerse la comparación de edad,
-                            ya que los nombres no son valores que se puedan comprar como mayor o menor. 
+                            Primero, es necesario saber cuando serán las siguientes elecciones. Las más próximas son 2026, por 
+                            lo que ello nos servirá de base. Para saber si la persona podrá votar en ese futuro, debemos 
+                            aumentarle 5 años a su edad actual, y luego comprarla si es mayor o igual a 18 (la edad legal mínima 
+                            para poder votar en el Perú)
                         </p>
-                        <br> 
-                        <li>Persona1Nombre: Mia </li>
-                        <li>Persona2Nombre: Abel </li>
-                        <li>Persona3Nombre: Sion </li>
                             <br />
-                            <li>Persona1Edad: 25 años </li>
-                            <li>Persona2Edad: 27 años </li>
-                            <li>Persona3Edad: 21 años </li>
+                            "Por favor, ingrese su edad: (EdadPersona)"
+                            <li>EdadPersona: 16 </li>
                             <br />
                             <div class ="box">
-                                Para obtener la respuesta: Persona1Edad > Persona2Edad = Resultado solo puede ser true or false. If false, entonces
-                                Persona2Edad > Persona3Edad. Y si esa opración es verdadera, entonces la respuesta es Persona2Edad +
+                                Para obtener la respuesta: (EdadPersona + 5) >= 18 if TRUE entonces "Sí puede votar" , else "No puede votar".
                                 <br />
-                                (25 > 27) FALSO -> (27 > 21) VERDADERO -> MayorEdad
+                                (16 + 5) = 21 >=18 VERDADERO 
                                 <br />
-                                console.log( `La edad más alta es  ${MayorEdad} y le pertenece a  ${Persona3Nombre}`) 
+                                console.log( `El usuario sí puede votar`) 
                             </div>
                             <hr class="dash" />
                             <h4>Enhorabuena, ¡ya hemos llegado al final! </h4>
