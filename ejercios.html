@@ -34,107 +34,109 @@
 						1. Implementar un algoritmo que reciba 2 argumentos y los sume, el resultado
 						deberá imprimir en pantalla
 					</h4>
-					<h5>Respuesta:</h5>
+
 					<p>
 						En primer lugar, debe de fijarse el valor de los dos argumentos y nombrarlos
-						de manera correcta para realizar la opreación, en este caso una suma NUMÉRICA:
-                    </p>
-						<br />
-						<li>Elemento1: 50</li>
-						<li>Elemento2: 90</li>
-						<br />
-                        <div class ="box">
+						de manera correcta para realizar la operación, en este caso una suma NUMÉRICA:
+					</p>
+					<br />
+					<li>Elemento1: 50</li>
+					<li>Elemento2: 90</li>
+					<br />
+					<div class="box">
 						Para obtener la respuesta: Elemento1 (50)+ Elemento2 (90)= RESULTADO (140)
 						<br />
-						La forma en la que aparecería en una pantalla sería "El total es: (140)"
-                    </div>
+						console.log( `La suma es de ${RESULTADO}`)
+					</div>
 					<hr class="dash" />
 					<!-- SEGUNDA PREGUNTA -->
 					<h4>2. Un estudiante realiza 4 exámenes, calcular el promedio de estos</h4>
-					<h5>Respuesta:</h5>
+
 					<p>
 						Tal como el ejercicio NUMÉRICO anterior, debemos de asignarle un valor a estas
 						"NOTAS", calcular la suma y luego dividirla en entre el número de elementos
 						sumados. En el caso de promedios, de tener un número decimal inferior a 0.5,
 						el resultado no se redondea:
-                    </p>
-						<br />
-						<li>Nota1: 10</li>
-						<li>Nota2: 9.4</li>
-						<li>Nota3: 13</li>
-						<li>Nota4: 19</li>
-						<br />
-                        <div class ="box">
+					</p>
+					<br />
+					<li>Nota1: 10</li>
+					<li>Nota2: 9.4</li>
+					<li>Nota3: 13</li>
+					<li>Nota4: 19</li>
+					<br />
+					<div class="box">
 						Para obtener la respuesta: (Nota1 + Nota2 + Nota3 + Nota4) /4 = Promedio
 						<br />
 						(10+9.4+13+19)/4 =10,35 --> 10
 						<br />
-						El resultado en una pantalla sería: "El promedio del estudiante es 10"
-                    </div>
+						console.log( `El promedio del alumno es ${Promedio}`)
+					</div>
 					<hr class="dash" />
 					<!-- TERCERA PREGUNTA -->
-					<h4>3. Calcular el área de un rectángulo:</h5>
+					<h4>3. Calcular el área de un rectángulo:</h4>
 					<p>
-						Para hallar el área de un rectángulo, es necesario tener tanto la BASE como la ALTURA,
-                        así que deben de colocarse esos dos datos primero:
-                    </p>
+						Para hallar el área de un rectángulo, es necesario tener tanto la BASE como la
+						ALTURA, así que deben de colocarse esos dos datos primero:
+					</p>
+					<br />
+					<li>Base: 5cm</li>
+					<li>Altura: 25cm</li>
+					<br />
+					<div class="box">
+						Para obtener la respuesta: (Base * Altura) = Área
 						<br />
-						<li>Base: 5cm</li>
-						<li>Altura: 25cm</li>
+						(5 * 25) = 125 cm2
 						<br />
-                        <div class ="box">
-                            Para obtener la respuesta: (Base * Altura) = Área
-                            <br />
-                            (5 * 25) = 125 cm2
-                            <br />
-                            El resultado en una pantalla sería: "El área del rectángulo es 125 cm2"
-                        </div>
-                    <hr class="dash" />
-                    <!-- CUARTA PREGUNTA -->
-					<h4>4. Calcular el área de un trángulo:</h5>
-                        <p>
-                            Para hallar el área de un triángulo, es necesario tener tanto la BASE como la ALTURA,
-                           y luego dividirlo entre 2 (en caso de no especificarse que clase de triángulo es):   
-                        </p>
-                            <br />
-                            <li>Base: 4cm</li>
-                            <li>Altura: 14cm</li>
-                            <br />
-                            <div class ="box">
-                                Para obtener la respuesta: (Base * Altura)/2 = Área
-                                <br />
-                                (4 * 14)/2 = 28 cm2
-                                <br />
-                                El resultado en una pantalla sería: "El área del triángulo es 28 cm2"
-                            </div>
-                    <hr class="dash" />
-                      <!-- QUINTA PREGUNTA -->
-					<h4>5. Calcular el área de una circunferencia:</h5>
-                        <p>
-                            Las circunferencias no poseen área, pero los círulos sí. Para hallar el área de un círculo,
-                            es necesario saber su RADIO (y elevarlo al cuadrado) y los primeros dos valores decimales de PI:   
-                        </p>
-                            <br />
-                            <li>Radio: 2cm</li>
-                            <li>Pi: 3.14cm</li>
-                            <br />
-                            <div class ="box">
-                                Para obtener la respuesta: ( (Radio*Radio) * Pi)= Área
-                                <br />
-                                ((2 * 2) * 3.14) = 12,56 cm2
-                                <br />
-                                El resultado en una pantalla sería: "El área del círculo es 12,56 cm2"
-                            </div>
-                    <hr class="dash" />
-                            ¿ Estás listo para continuar? 
-                            <div class="btnbox">
-                                <a href="./ejercicios2.html">
-                                    <button type="button" class="btn"> ¡Vamos allá! </button>
-                                </a>
-                                <a href="./index.html">
-                                    <button type="button" class="btn bot"> Regresemos </button>
-                                </a>
-                             </div>
+						console.log( `El área del rectángulo es ${Área}`)
+					</div>
+					<hr class="dash" />
+					<!-- CUARTA PREGUNTA -->
+					<h4>4. Calcular el área de un trángulo:</h4>
+					<p>
+						Para hallar el área de un triángulo, es necesario tener tanto la BASE como la
+						ALTURA, y luego dividirlo entre 2 (en caso de no especificarse que clase de
+						triángulo es):
+					</p>
+					<br />
+					<li>Base: 4cm</li>
+					<li>Altura: 14cm</li>
+					<br />
+					<div class="box">
+						Para obtener la respuesta: (Base * Altura)/2 = Área
+						<br />
+						(4 * 14)/2 = 28 cm2
+						<br />
+						console.log( `El área del triángulo es ${Área}`)
+					</div>
+					<hr class="dash" />
+					<!-- QUINTA PREGUNTA -->
+					<h4>5. Calcular el área de una circunferencia:</h4>
+					<p>
+						Las circunferencias no poseen área, pero los círulos sí. Para hallar el área
+						de un círculo, es necesario saber su RADIO (y elevarlo al cuadrado) y los
+						primeros dos valores decimales de PI:
+					</p>
+					<br />
+					<li>Radio: 2cm</li>
+					<li>Pi: 3.14cm</li>
+					<br />
+					<div class="box">
+						Para obtener la respuesta: ( (Radio*Radio) * Pi)= Área
+						<br />
+						((2 * 2) * 3.14) = 12,56 cm2
+						<br />
+						console.log( `El área del círculo es ${Área}`)
+					</div>
+					<hr class="dash" />
+					¿ Estás listo para continuar?
+					<div class="btnbox">
+						<a href="./ejercicios2.html">
+							<button type="button" class="btn">¡Vamos allá!</button>
+						</a>
+						<a href="./index.html">
+							<button type="button" class="btn bot">Regresemos</button>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
