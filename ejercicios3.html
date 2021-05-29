@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			crossorigin="anonymous"
+			integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="./img/computer.png" sizes="16x16 32x32" type="img/png" />
+		<link rel="stylesheet" href="./stylesheet.css" />
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="block">
+					<h3>Lista de ejercicios (11-15)</h3>
+					<hr />
+					<h6>
+						(*) Recordar que en el lenguaje computacional JavaScript, se debe de señalar
+						si los elementos son NUMÉRICOS o STRING, ya que este último está enfocado en
+						caractéres y es la respuesta por default en el sistema.
+					</h6>
+					<br />
+					<!-- PRIMERA PREGUNTA -->
+					<h4>
+						11. Se les dará un bono por antigüedad a los empleados de una tienda. Si tienen
+                        un año se les dará $100, si tienen 2 años $200 y así sucesivamente hasta los 5 años.
+                        Para quienes tengan más de 5 años el bono será de $1000.
+					</h4>
+					<h5>Respuesta:</h5>
+					<p>
+						En este caso, debemos hacer la comparación de 6 posibles escenarios: cuando mis años como
+                        empleados son iguales a 1, a 2, a 3, a 4, a 5 y a mayor de 5.
+                    </p>
+						<br />
+                        "Por favor señale sus años de trabajo en la compañía: (AñosTrabajo)"
+						<li>AñosTrabajo: 7</li>
+                        <li>1pay: $100</li>
+                        <li>2pay: $200</li>
+                        <li>3pay: $300</li>
+                        <li>4pay: $400</li>
+                        <li>5pay: $500</li>
+                        <li>10pay: $1000</li>
+
+						<br />
+                        <div class ="box">
+                            <li>  AñosTrabajo ==1, if true then (1pay) false then:</li>
+                            <li>  AñosTrabajo ==2, if true then (2pay) if false then:</li>
+                            <li>  AñosTrabajo ==3, if true then (3pay) if false then:</li>
+                            <li>  AñosTrabajo ==4, if true then (4pay) if false then:</li>
+                            <li>  AñosTrabajo ==5, if true then (5pay) if false then:</li>
+                            <li>  AñosTrabajo > 5, if true then (10pay) </li>
+						<br />
+						console.log( `La remuneración que le corresponde es ${10pay}`)
+                    </div>
+					<hr class="dash" />
+					<!-- SEGUNDA PREGUNTA -->
+					<h4> 12. Un profesor tiene un salario inicial de $ 1500, y recibe un  incremento de 10% anual 
+                        durante 6 años. ¿Cúal es su salario al cabo de 6 años? ¿Qué salario ha recibido en cada 
+                        uno de los 6 años?
+                    </h4>
+					<h5>Respuesta:</h5>
+					<p>
+                        Primero, debemos calcular el salario de todo un año, y extraer el 10% correspondiente 
+                        para poder multiplicarlo y obtener el nuevo salario con ese extra. Luego, multiplicar
+                        ese nuevo total por 6 para saber cuanto ha ganado en esa cantidad de años.
+                    </p>
+						<br />
+						<li>AñosTrabajo:6  </li>
+						<li>Sueldo: 1.500</li>
+						<br />
+                        <div class ="box">
+						Para obtener la respuesta de cuanto gana en un año + el incremento: (Sueldo * 12) + ((Sueldo*12) * 0,10)= SalarioAnual
+						<br />
+                        Para obtener la respuesta de cuanto gana en 6 años + el incremento: SalarioAnual *6 = SalarioTotal
+                        <br />
+						(1,500 * 12) + ((1,500 *12)* 0,10) = (18,000) + 1,800 = 19,800
+						<br />
+                        19,800 * 6 = 118,800
+                        <br />
+                        console.log( `El salario en un año es  ${SalarioAnual} y el salario en 6 años es ${SalarioTotal}.`)
+                    </div>
+					<hr class="dash" />
+					<!-- TERCERA PREGUNTA -->
+					<h4>8. Una empresa importadora desea determinar cuántos dólares puede adquirir con 
+                        equis candidad de dinero peruano.</h5>
+					<p>
+						Para este ejercicio, es necesario saber cuánto vale un dólar americano en relación a un sol peruano.
+                        En caso se desee aplicar una variable RANDOM, debe de establacerse un límite (por ejemplo, de 0 a 100),
+                        para que pueda ser computado y comparado, ya que de manera natural las variables RANDOM solo llegan a valores 
+                        entre 0 y 1.
+                    </p>
+						<br />
+						<li>ValorDolar:3,70</li>
+						<li>SolX: 50 </li>
+						<br />
+                        <div class ="box">
+                            Para obtener la respuesta: SolX / ValorDolar = CantidadDolar
+                            <br />
+                            50 /3,70 = 13, 51
+                            <br />
+                            console.log( `Con (SolX) pueden adquirir hasta ${CantidadDolar}`) 
+                        </div>
+                    <hr class="dash" />
+                    <!-- CUARTA PREGUNTA -->
+					<h4>9. Una empresa que contrata personal requiere determinar la edad de las personas 
+                        que solicitan el trabajo, pero cuando se les realiza la entrevista solo se le pregunta el
+                        año en que nacieron. (*)
+                    </h5>
+                        <p>
+                            Para poder hallar la solución, debe de restarse el año actual (2021) con respecto al 
+                            AÑO DE NACIMIENTO del candidato para poder obtener su edad.   
+                        </p>
+                            <br />
+                            <li>AñoPresente: 2021 </li>
+                            <li>AñoDeNacimiento: 1994</li>
+                            <br />
+                            <div class ="box">
+                                Para obtener la respuesta: (AñoPresente - AñoDeNacimiento) = EdadCandidato
+                                <br />
+                                (2021 -1994) = 27 años
+                                <br />
+                                console.log( `La edad del candidato es ${EdadCandidato}`) 
+                            </div>
+                    <hr class="dash" />
+                      <!-- QUINTA PREGUNTA -->
+					<h4>10. Se tiene el nombre y la edad de tres personas, se desea saber el nombre y la 
+                        edad de la persona de menor edad:</h5>
+                        <p>
+                            La forma más práctica de solucionar este problema, es aplicando comparativos. 
+                            Almaceando los nombres y las edades en un valor, puede hacerse la comparación de edad,
+                            ya que los nombres no son valores que se puedan comprar como mayor o menor. 
+                        </p>
+                        <br> 
+                        <li>Persona1Nombre: Mia </li>
+                        <li>Persona2Nombre: Abel </li>
+                        <li>Persona3Nombre: Sion </li>
+                            <br />
+                            <li>Persona1Edad: 25 años </li>
+                            <li>Persona2Edad: 27 años </li>
+                            <li>Persona3Edad: 21 años </li>
+                            <br />
+                            <div class ="box">
+                                Para obtener la respuesta: Persona1Edad > Persona2Edad = Resultado solo puede ser true or false. If false, entonces
+                                Persona2Edad > Persona3Edad. Y si esa opración es verdadera, entonces la respuesta es Persona2Edad +
+                                <br />
+                                (25 > 27) FALSO -> (27 > 21) VERDADERO -> MayorEdad
+                                <br />
+                                console.log( `La edad más alta es  ${MayorEdad} y le pertenece a  ${Persona3Nombre}`) 
+                            </div>
+                            <hr class="dash" />
+                            <h4>Enhorabuena, ¡ya hemos llegado al final! </h4>
+                            <div class="btnbox">
+                                <a href="./index.html">
+                                    <button type="button" class="btn bot"> Regresemos </button>
+                                </a>
+                             </div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

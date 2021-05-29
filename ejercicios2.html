@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			crossorigin="anonymous"
+			integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="./img/computer.png" sizes="16x16 32x32" type="img/png" />
+		<link rel="stylesheet" href="./stylesheet.css" />
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="block">
+					<h3>Lista de ejercicios (6-10)</h3>
+					<hr />
+					<h6>
+						(*) Recordar que en el lenguaje computacional JavaScript, se debe de señalar
+						si los elementos son NUMÉRICOS o STRING, ya que este último está enfocado en
+						caractéres y es la respuesta por default en el sistema.
+					</h6>
+					<br />
+					<!-- PRIMERA PREGUNTA -->
+					<h4>
+						6. Determinar el sueldo semanal de un trabajador, basándose en sus 
+                        horas trabajadas y su salario de hora hombre.
+					</h4>
+					<h5>Respuesta:</h5>
+					<p>
+						Para poder resolver este problema, es necesario saber cuantas horas trabaja al día esta persona,
+                        además de cuanto gana por jornada.
+                    </p>
+						<br />
+						<li>HorasDeTrabajo: 8 horas </li>
+						<li>SalarioPorHora: 10 soles</li>
+                        <li>DíasLaborables: 5 días </li>
+						<br />
+                        <div class ="box">
+						Para obtener la respuesta: (HorasDeTrabajo * SalarioPorHora) * DíasLaborables = SueldoSemanal
+						<br />
+						(10 * 8) *5 = 400
+                        <br>
+						console.log( `El sueldo semanal es ${SueldoSemanal}`)
+                    </div>
+					<hr class="dash" />
+					<!-- SEGUNDA PREGUNTA -->
+					<h4>7. Una modista, para realizar sus prendas de vestir, encarga sus telas al extranjero.
+                        Por cada pedido, tiene que proporcionar las medidas de la tela en pulgadas, pero ella 
+                        generalmente las tiene en metros. Realice un algoritmo para ayudar a resolver
+                        el problema, determinando cuantas pulgadas debe pedir con base en los metros que requiere, si una pulgada equivale 
+                        a 0,0254m. </h4>
+					<h5>Respuesta:</h5>
+					<p>
+						En este caso, para que la modista sepa cuanta tela encargar, debe de transformarse los METROS a PULGADAS, 
+                        entonces lo que queda es elaborar un algoritmo que permita al usuario indtroducir cuantos 
+                        pulgadas quiere convertir:
+                    </p>
+						<br />
+                        "Por favor, introduzca la cantidad de tela a convertir: (NumeroDePulgadas) in"
+						<li>NumeroDePulgadas: 36 </li>
+						<li>ValorConvertido: 39.37 <-- Un metro equivale a esto en pulgadas</li>
+						<br />
+                        <div class ="box">
+						Para obtener la respuesta: NumeroDePulgadas * ( 1metro/ 39,37) = TelaAPedir
+						<br />
+						36in * (1m / 39.37in) = 0.91 m
+						<br />
+                        console.log( `NumeroDePulgadas pulgas son  ${TelaAPedir} metros.`)
+                    </div>
+					<hr class="dash" />
+					<!-- TERCERA PREGUNTA -->
+					<h4>8. Una empresa importadora desea determinar cuántos dólares puede adquirir con 
+                        equis candidad de dinero peruano.</h5>
+					<p>
+						Para este ejercicio, es necesario saber cuánto vale un dólar americano en relación a un sol peruano.
+                        En caso se desee aplicar una variable RANDOM, debe de establacerse un límite (por ejemplo, de 0 a 100),
+                        para que pueda ser computado y comparado, ya que de manera natural las variables RANDOM solo llegan a valores 
+                        entre 0 y 1.
+                    </p>
+						<br />
+						<li>ValorDolar:3,70</li>
+						<li>SolX: 50 </li>
+						<br />
+                        <div class ="box">
+                            Para obtener la respuesta: SolX / ValorDolar = CantidadDolar
+                            <br />
+                            50 /3,70 = 13, 51
+                            <br />
+                            console.log( `Con (SolX) pueden adquirir hasta ${CantidadDolar}`) 
+                        </div>
+                    <hr class="dash" />
+                    <!-- CUARTA PREGUNTA -->
+					<h4>9. Una empresa que contrata personal requiere determinar la edad de las personas 
+                        que solicitan el trabajo, pero cuando se les realiza la entrevista solo se le pregunta el
+                        año en que nacieron. (*)
+                    </h5>
+                        <p>
+                            Para poder hallar la solución, debe de restarse el año actual (2021) con respecto al 
+                            AÑO DE NACIMIENTO del candidato para poder obtener su edad.   
+                        </p>
+                            <br />
+                            <li>AñoPresente: 2021 </li>
+                            <li>AñoDeNacimiento: 1994</li>
+                            <br />
+                            <div class ="box">
+                                Para obtener la respuesta: (AñoPresente - AñoDeNacimiento) = EdadCandidato
+                                <br />
+                                (2021 -1994) = 27 años
+                                <br />
+                                console.log( `La edad del candidato es ${EdadCandidato}`) 
+                            </div>
+                    <hr class="dash" />
+                      <!-- QUINTA PREGUNTA -->
+					<h4>10. Se tiene el nombre y la edad de tres personas, se desea saber el nombre y la 
+                        edad de la persona de menor edad:</h5>
+                        <p>
+                            La forma más práctica de solucionar este problema, es aplicando comparativos. 
+                            Almaceando los nombres y las edades en un valor, puede hacerse la comparación de edad,
+                            ya que los nombres no son valores que se puedan comprar como mayor o menor. 
+                        </p>
+                        <br> 
+                        <li>Persona1Nombre: Mia </li>
+                        <li>Persona2Nombre: Abel </li>
+                        <li>Persona3Nombre: Sion </li>
+                            <br />
+                            <li>Persona1Edad: 25 años </li>
+                            <li>Persona2Edad: 27 años </li>
+                            <li>Persona3Edad: 21 años </li>
+                            <br />
+                            <div class ="box">
+                                Para obtener la respuesta: Persona1Edad > Persona2Edad = Resultado solo puede ser true or false. If false, entonces
+                                Persona2Edad > Persona3Edad. Y si esa opración es verdadera, entonces la respuesta es Persona2Edad +
+                                <br />
+                                (25 > 27) FALSO -> (27 > 21) VERDADERO -> MayorEdad
+                                <br />
+                                console.log( `La edad más alta es  ${MayorEdad} y le pertenece a  ${Persona3Nombre}`) 
+                            </div>
+                            <hr class="dash" />
+                            ¿ Estás listo para continuar? 
+                            <div class="btnbox">
+                                <a href="./ejercicios2.html">
+                                    <button type="button" class="btn"> ¡Vamos allá! </button>
+                                </a>
+                                <a href="./index.html">
+                                    <button type="button" class="btn bot"> Regresemos </button>
+                                </a>
+                             </div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
